@@ -1,0 +1,260 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    scroll-behavior: smooth;
+}
+
+body {
+    width: 100%;
+    overflow-x: hidden;
+}
+
+h1 {
+    font-size: 50px;
+    line-height: 64px;
+    color: #332f2f;
+}
+
+h2 {
+    font-size: 46px;
+    line-height: 54px;
+    color: black;
+}
+
+h3 {
+    color: #ccdfbe;
+    font-weight: 500;
+}
+
+h4 {
+    font-size: 20px;
+    color: #332f2f;
+}
+
+h6 {
+    font-weight: 700;
+    font-size: 12px;
+}
+
+p {
+    font-size: 16px;
+    color: rgb(252, 165, 84);
+    margin: 5px 0 20px 0;
+}
+
+button.normal {
+    padding: 14px 50px;
+    border-radius: 15px;
+    border: 0;
+    outline: 0;
+    background-color: #1a1a1a;
+    color: white;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+button.normal:hover {
+    color: rgb(252, 165, 84);
+    box-shadow: 5px 2px 20px rgba(0, 0, 0, 0.5);
+}
+
+.section-p1 {
+    padding: 40px 80px;
+}
+
+.section-m1 {
+    margin: 40px 0;
+}
+
+#header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px 80px;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    box-shadow: 1px 1px 7px rgba(0, 0, 0, 0.3);
+    position: sticky;
+    background-color: white;
+}
+
+#header .brand {
+    text-decoration: none;
+    color: black;
+    font-size: 30px;
+    font-weight: 700;
+    color: rgb(180, 0, 0);
+}
+
+#header .navbar {
+    display: flex;
+    flex-direction: row;
+    gap: 0;
+}
+
+#header .navbar input {
+    height: 50px;
+    width: 400px;
+    border-color: #ccdfbe;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    padding: 20px;
+    border-style: solid;
+}
+
+#header .navbar input:focus {
+    outline: none;
+}
+
+#header .navbar a {
+    cursor: pointer;
+    padding: 0px;
+    height: 50px;
+    width: 50px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    background-color: #ccdfbe;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.3s ease;
+}
+
+#header .navbar a:hover {
+    background-color: #abd38f;
+}
+
+#hero-banner {
+    background-image: url('assets/bg1.jpg');
+    background-size: cover;
+    background-position: top 34% right 0;
+    margin: 40px 100px;
+    border-radius: 15px;
+    box-shadow: 2px 3px 7px rgba(0, 0, 0, .5);
+}
+
+#hero-banner .cover {
+    padding: 50px;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+    backdrop-filter: blur(3px);
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, .5);
+}
+
+#main {
+    padding: 0 70px;
+}
+
+#main .category {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 40px;
+}
+
+#main .category .main-grid {
+    display: grid;
+    grid-template: 1fr / 20% 20% 20% 20%;
+    grid-column-gap: 5%;
+    justify-content: center;
+}
+
+#main .category .main-grid .meal-card {
+    width: auto;
+    height: auto;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    border: #a5a5a5 solid 1px;
+    border-radius: 15px;
+    transition: 0.3s ease;
+}
+
+#main .category .main-grid .meal-card:hover {
+    box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.3);
+}
+
+#main .category .main-grid .meal-card img {
+    border-top-right-radius: 14px;
+    border-top-left-radius: 14px;
+}
+
+#main .category .main-grid .meal-card h4,
+#main .category .main-grid .meal-card a {
+    margin-left: 5%;
+}
+
+#main .category .main-grid .meal-card a {
+    margin-bottom: 5%;
+    border: #4f7c2e solid 1px;
+    height: 30px;
+    width: 120px;
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: black;
+    background-color: #ccdfbe;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+#main .category .main-grid .meal-card a:hover {
+    box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.3);
+}
+
+#banner-meal {
+    background-image: url('assets/meals/pizza.jpg');
+    height: 40vh;
+    background-size: cover;
+}
+
+#main-meal {
+    padding: 50px 120px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+#main-meal .descr {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#main-meal .descr p {
+    width: 60vw;
+}
+
+#main-meal .descr p span {
+    font-size: 20px;
+    font-weight: 500;
+}
+
+#footer {
+    width: 100%;
+    bottom: 0;
+    margin-top: 2vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 20vh;
+    background-color: rgb(180, 0, 0);
+    color: white;
+    box-shadow: 0 -1px 5px rgba(0, 0, 0, 0.5);
+}
